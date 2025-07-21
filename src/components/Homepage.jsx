@@ -36,25 +36,28 @@ function Homepage() {
             Sarvesh Pratap
           </h2>
 
-          <h1 className="text-3xl font-semibold flex gap-2 items-center h-12 overflow-hidden">
-            I'm a{" "}
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-                className="ml-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text"
-              >
-                {words[index]}
-              </motion.span>
-            </AnimatePresence>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mt-4 flex flex-wrap gap-2 items-baseline">
+            <span className="text-white">I'm a</span>
+            <span className="relative">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                  className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 whitespace-nowrap"
+                >
+                  {words[index]}
+                </motion.span>
+              </AnimatePresence>
+            </span>
           </h1>
 
           <p className="mt-4 text-gray-300">
             Anyone can write code that a computer can understand. Good
-            programmers write code that humans can understand..... -Martin Fowler
+            programmers write code that humans can understand..... -Martin
+            Fowler
           </p>
 
           <NavLink
