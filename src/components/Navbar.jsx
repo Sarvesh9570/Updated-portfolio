@@ -33,12 +33,11 @@ function Navbar() {
 
           {/* nav links here */}
           <ul
-            className={`md:flex gap-2 pl-5 md:pl-0 md:items-center md:pb-0 pb-12 lg:z-20
-             absolute md:z-auto z-50 left-0 w-full text-center  dark:bg-gray-900 
-            md:static md:w-auto  transition-all duration-500 ease-in ${
-              isopen ? "top-12" : "top-[-490px]"
-            }`}
-          >
+            className={`md:flex gap-2 pl-5 md:pl-0 md:items-center md:pb-0 pb-12 
+                     absolute left-0 w-full text-center dark:bg-gray-900 
+                     md:static md:w-auto transition-all duration-500 ease-in
+                     ${isopen ? "top-14 z-50" : "-top-[500px] z-[-10]"}`}
+            >
             <li className="my-7 md:my-0 md:ml-8 font-bold bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
               {" "}
               <Link
