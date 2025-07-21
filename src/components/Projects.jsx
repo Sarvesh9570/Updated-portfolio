@@ -38,8 +38,8 @@ function Projects() {
       title: "Personal portfolio",
       dec: "A responsive personal portfolio website built using HTML, CSS, JavaScript, and Bootstrap to showcase projects, skills, and contact information, with smooth navigation and a clean, modern user interface.",
       tools: "HTML, CSS, JavaScript, React, Redux",
-      github_code: "https://github.com/Sarvesh9570/",
-      diploy_link: "https://github.com/Sarvesh9570/",
+      github_code: "https://github.com/Sarvesh9570/Updated-portfolio",
+      diploy_link: "https://updated-portfolio-nj2w.onrender.com/",
       image: project4,
     },
   ];
