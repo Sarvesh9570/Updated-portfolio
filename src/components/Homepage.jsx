@@ -21,12 +21,12 @@ function Homepage() {
 
   return (
     <div className="mx-auto max-w-screen-xl px-4 mt-4 sm:mt-0 py-8 sm:px-6 sm:py-12 lg:px-9 lg:py-16">
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-44">
-        <div className="relative h-64 w-64 mx-auto md:mx-0 items-center overflow-hidden rounded-full md:w-[330px] lg:mt-5 lg:order-last lg:h-[75%]">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-44 lg:items-center">
+        <div className="w-72 h-72 md:w-[380px] md:h-[380px] mx-auto md:mx-0 rounded-full overflow-hidden lg:mt-5 lg:order-last">
           <img
             alt="myprofile"
             src={profile}
-            className="absolute md:h-[361px] w-full object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 
