@@ -7,7 +7,7 @@ function About() {
       <section className="container lg:w-[90%] m-auto">
         <div className="mx-auto max-w-screen-2xl px-4  py-16 sm:px-6 lg:px-8 dark:bg-gray-900">
           <h1 className=" text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-            About Us
+            About Me
           </h1>
           <div className="grid mt-3 sm:mt-0 grid-cols-1 lg:h-full lg:grid-cols-2">
             <div className="relative z-[1] lg:py-16">
