@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { HiBars3BottomRight, HiXMark } from "react-icons/hi2";
-import { NavLink } from "react-router-dom";
+
 import { Link } from "react-scroll";
 
 function Navbar() {
   let [isopen, setisopen] = useState(false);
   return (
     <>
-      <div className="shadow-lg shadow-[#213469] w-full fixed top-0 dark:bg-gray-900 left-0 z-50 lg:z-50 md:z-auto ">
-        <div className="md:px-10 py-4 px-7 md:flex justify-between items-center  dark:bg-gray-900">
+         <div className="shadow-lg shadow-[#213469] fixed top-0 left-0 w-full dark:bg-gray-900 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-5 md:px-10 h-16 lg:h-20">
           {/* logo */}
           <div className="flex gap-2 text-2xl cursor-pointer items-center">
             <span className="font-bold">
@@ -150,8 +150,17 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+            <li>
+              <a className="my-7 md:my-0 md:ml-8 font-bold bg-white hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text"
+              href="https://leetcode.com/sarvesh9570/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Leetcode
+            </a>
+            </li>
             <li className="my-7 md:my-0 md:ml-8 font-bold ">
-              <NavLink
+              {/* <NavLink
                 className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
                 to="https://drive.google.com/file/d/15468dW4tYMd1K_ToR2n6_ZUcE-EO18aS/view"
                 target="_blank"
@@ -159,7 +168,7 @@ function Navbar() {
                 <span className="block rounded-full dark:bg-gray-900 px-8 py-3 text-sm font-medium group-hover:bg-transparent">
                   Resume Download
                 </span>
-              </NavLink>
+              </NavLink> */}
             </li>
           </ul>
         </div>

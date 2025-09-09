@@ -4,6 +4,8 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 
 import { FaWhatsapp } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 import LoadingSpinner from "./LoadingSpinner";
 
@@ -61,7 +63,7 @@ function Contact() {
               {/* contact info  */}
               <div className="gap-4 grid mb-12 m-2 grid-cols-1 md:grid-cols-2">
                 <Link
-                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#000000] px-2 py-1 text-white hover:bg-transparent  focus:outline-none focus:ring active:text-indigo-500"
+                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#3E3190] px-2 py-1 text-white hover:bg-transparent transition-colors duration-300 focus:outline-none focus:ring active:text-indigo-500"
                   to="https://www.linkedin.com/in/sarvesh-pratap-230373221/"
                   target="_blank"
                 >
@@ -149,7 +151,7 @@ function Contact() {
                 </Link>
 
                 <Link 
-                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#000000] px-2 py-1  text-white hover:bg-transparent  focus:outline-none focus:ring active:text-indigo-500"
+                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#3E3190] px-2 py-1  text-white hover:bg-transparent  focus:outline-none focus:ring active:text-indigo-500"
                   to="https://github.com/Sarvesh9570"
                   target="_blank"
                 >
@@ -198,7 +200,24 @@ function Contact() {
                   <span className="text-sm font-medium"> Github </span>
                 </Link>
                 <Link
-                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#000000] px-2 py-1  text-white hover:bg-transparent  focus:outline-none focus:ring active:text-indigo-500"
+                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#3E3190] px-2 py-1  text-white hover:bg-transparent transition-colors duration-300 focus:outline-none focus:ring active:text-indigo-500"
+                  to="https://leetcode.com/u/sarvesh9570/"
+                  target="_blank"
+                >
+                  <SiLeetcode className="w-10 h-10" />
+                  <span className="text-sm font-medium"> Leetcode </span>
+                </Link>
+                <Link
+                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#3E3190] px-2 py-1  text-white hover:bg-transparent transition-colors duration-300 focus:outline-none focus:ring active:text-indigo-500"
+                  to="https://codechef.com/users/sarvesh9570"
+                  target="_blank"
+                >
+                  <SiCodechef  className="w-10 h-10" />
+                  <span className="text-sm font-medium"> Codechef </span>
+                </Link>
+                
+                <Link
+                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#3E3190] px-2 py-1  text-white hover:bg-transparent transition-colors duration-300 focus:outline-none focus:ring active:text-indigo-500"
                   to="mailto:job.sarveshpratap@gmail.com"
                   target="_blank"
                 >
@@ -210,14 +229,17 @@ function Contact() {
                   </span>
                 </Link>
                 <Link
-                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#000000] px-2 py-1  text-white hover:bg-transparent  focus:outline-none focus:ring active:text-indigo-500"
+                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-600  bg-[#3E3190] px-2 py-1  text-white hover:bg-transparent transition-colors duration-300 focus:outline-none focus:ring active:text-indigo-500"
                   to="https://wa.me/qr/S43R5JMFLGFWC1"
                   target="_blank"
                 >
                   <FaWhatsapp className="w-10 h-10" />
                   <span className="text-sm font-medium"> WhatsApp </span>
                 </Link>
+                
               </div>
+
+
 
               {/* contact me form */}
 
