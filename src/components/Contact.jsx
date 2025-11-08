@@ -310,7 +310,8 @@ function Contact() {
                 <div className="mt-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg  bg-[#213469] border-gray-300	 border-2 hover:bg-sky-700 px-5 py-3 font-medium text-white sm:w-auto"
+                    disabled={true}
+                    className="inline-block w-full rounded-lg  bg-[#213469] border-gray-300	 border-2 px-5 py-3 font-medium text-white sm:w-auto"
                   >
                     Send Enquiry
                   </button>
